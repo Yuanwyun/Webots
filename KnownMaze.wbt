@@ -1,0 +1,241 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "../protos/FourWheelsRound.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 2.287530714996861 -1.2843479118451995 7.598290078399678
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Transform {
+  translation 2.5 -2.5 0
+  children [
+    RectangleArena {
+      floorSize 5 5
+      floorTileSize 1 1
+      floorAppearance Appearance {
+        texture ImageTexture {
+          url [
+            "https://lynchp13.github.io/res/img/KnownMazeGroundTexture.png"
+          ]
+          repeatS FALSE
+          repeatT FALSE
+          filtering 0
+        }
+        textureTransform TextureTransform {
+          scale 0.2 0.2
+        }
+      }
+      wallHeight 0.5
+    }
+    Solid {
+      translation 1.5 1.5 0.25
+      children [
+        DEF X-2 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 2 0.1 0.5
+          }
+        }
+      ]
+      name "Wall1"
+      boundingObject USE X-2
+    }
+    Solid {
+      translation -1.5 1.5 0.25
+      children [
+        DEF X-2 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 2 0.1 0.5
+          }
+        }
+      ]
+      name "Wall2"
+      boundingObject USE X-2
+    }
+    Solid {
+      translation -0.55 0.95 0.25
+      children [
+        DEF Y-1 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 0.1 1 0.5
+          }
+        }
+      ]
+      name "Wall3"
+      boundingObject USE Y-1
+    }
+    Solid {
+      translation 0.5 0.5 0.25
+      children [
+        DEF X-2 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 2 0.1 0.5
+          }
+        }
+      ]
+      name "Wall4"
+      boundingObject USE X-2
+    }
+    Solid {
+      translation 1.45 -1.5 0.25
+      children [
+        DEF Y-2 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 0.1 2 0.5
+          }
+        }
+      ]
+      name "Wall5"
+      boundingObject USE Y-2
+    }
+    Solid {
+      translation 0.5 -0.45 0.25
+      children [
+        DEF X-2 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 2 0.1 0.5
+          }
+        }
+      ]
+      name "Wall6"
+      boundingObject USE X-2
+    }
+    Solid {
+      translation -1.5 0.95 0.25
+      children [
+        DEF Y-1 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 0.1 1 0.5
+          }
+        }
+      ]
+      name "Wall7"
+      boundingObject USE Y-1
+    }
+    Solid {
+      translation -0.55 -0.9 0.25
+      children [
+        DEF Y-1 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 0.1 1 0.5
+          }
+        }
+      ]
+      name "Wall8"
+      boundingObject USE Y-1
+    }
+    Solid {
+      translation -2 -0.45 0.25
+      children [
+        DEF X-1 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 1 0.1 0.5
+          }
+        }
+      ]
+      name "Wall9"
+      boundingObject USE X-1
+    }
+    Solid {
+      translation -1.5 -2 0.25
+      children [
+        DEF X-2 Shape {
+          appearance PBRAppearance {
+            baseColor 0.541176 0.541176 0.541176
+            metalness 0.2
+            emissiveIntensity 0.5
+          }
+          geometry Box {
+            size 0.1 1 0.5
+          }
+        }
+      ]
+      name "Wall10"
+      boundingObject USE X-2
+    }
+  ]
+}
+SolidBox {
+  translation 1.38 -0.8 0.2
+  size 0.3 0.3 0.3
+  physics Physics {
+  }
+}
+SolidBox {
+  translation 2.42 -1.17 0.2
+  name "box(1)"
+  size 0.3 0.3 0.3
+  physics Physics {
+  }
+}
+SolidBox {
+  translation 2.73 -1.81 0.2
+  name "box(2)"
+  size 0.3 0.3 0.3
+  physics Physics {
+  }
+}
+SolidBox {
+  translation 2.75 -2.74 0.2
+  name "box(3)"
+  size 0.3 0.3 0.3
+  physics Physics {
+  }
+}
+FourWheelsRound {
+  translation 0.43 -0.56 0.12
+}
