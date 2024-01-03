@@ -22,7 +22,7 @@ import csv
 maze = []
 
 #**************************** MUST CHANGE**************************
-og_filename = 'C:/Users/angus/Desktop/webots_submission/OccupancyGrid.csv'
+og_filename = 'OccupancyGrid.csv'
 #***************************************************************************
 
 with open(og_filename, 'r') as csv_file:
