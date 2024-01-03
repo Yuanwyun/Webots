@@ -20,7 +20,7 @@ import csv
 # read in csv file
 ##############################################################################
 maze = []
-og_filename = 'C:/Users/angus/Downloads/OccupancyGrid.csv'
+og_filename = 'OccupancyGrid.csv'
 with open(og_filename, 'r') as csv_file:
     reader = csv.reader(csv_file)
     for row in reader:
